@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: url("icons/logo.png") top left no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 100px #000;
+  height: 1000px;
+  width: 100%;
+}
+
+.cover {
+  padding: 5% 20%;
+  box-shadow: inset 0 0 100px #000;
+}
+
+h1 {
+  text-align: center;
+  font: 16px sans-serif;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 550px) {
+  .wrapper: {
+    width: 97%;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 850px) {
+  .wrapper {
+    width: 97%;
+    float: none;
+  }
+}
