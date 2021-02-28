@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: url("icons/logo.png") top left no-repeat;
+  background: url("img/logo.png") top left no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 100px #000;
   height: 1000px;
