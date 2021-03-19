@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+    <head>
+
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta charset="UTF-8">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dataviz România Logo</title>
+        
+        <link rel="icon" href="icon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+
+        <meta property="og:title" content="Dataviz România Logo Explorer" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://alexaac.github.io/datavizromania-logo/" />
+        <meta property="og:description" content="Relațiile dintre cazuri, doar cazurile pentru care se cunoaște sursa infectării" />
+        <meta property="article:publisher" content="https://alexaac.github.io" />
+        <meta property="article:section" content="Graphic" />
+        <meta property="article:tag" content="Graphic" />
+        <meta property="og:image" content="https://alexaac.github.io/datavizromania-logo/img/og_1200_630.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content="https://alexaac.github.io/datavizromania-logo/img/og_1200_630.png" />
+        <meta property="twitter:site" content="@maptheclouds" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <h1><span class="title">Ajută-ne să alegem un logo. Scrie-ne pe <a
+              href="https://join.slack.com/t/datavizromania/shared_invite/zt-n0o8dq3n-rhUZXh~iM221L1UroKBJZg" target="_blank"
+              >Dataviz România Slack</a
+            > ce variantă îți place!</span></h1>
+            <div id="chart" class="chart grabbable"></div>
+            <div id="fonts" class="editor">
+                <ul class="tags">
+                    <li class="tag">
+                        <span id="averia" class="tag__text">Averia</span>
+                    </li>
+                    <li class="tag">
+                        <span id="colombia" class="tag__text">Colombia</span>
+                    </li>
+                    <li class="tag">
+                        <span id="copasetic" class="tag__text">Copasetic</span>
+                    </li>
+                    <li class="tag">
+                        <span id="fashion-victim" class="tag__text">Fashion Victim</span>
+                    </li>
+                    <li class="tag">
+                        <span id="freeds" class="tag__text">Freeds</span>
+                    </li>
+                    <li class="tag">
+                        <span id="josefin-sans" class="tag__text">Josefin Sans</span>
+                    </li>
+                    <li class="tag">
+                        <span id="ministory" class="tag__text">Mini Story</span>
+                    </li>
+                    <li class="tag">
+                    <span id="ministory-svg" class="tag__text">Mini Story SVG</span>
+                    </li>
+                    <li class="tag"> 
+                        <span id="ministory-bold" class="tag__text">Ministory Bold</span>
+                    </li>
+                    <li class="tag">
+                        <span id="odin-light" class="tag__text">Odin Light</span>
+                    </li>
+                    <li class="tag">
+                        <span id="simvoni" class="tag__text">Simvoni</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="pannel">
+                <div class="side-pannel side-pannel--left">
+                    <div class="control control-group checkboxes">
+                        <div class="toggle-editor">
+                            <input type="checkbox" name="toggle-editor" id="toggle-editor">
+                            <label for="toggle-editor" id="toggle-editor-label">Editează</label>
+                        </div>
+                    </div>
+                    <div class="control control-group radios editor" >
+                        <div>
+                            <input type="radio" name="color-style" id="color-simple" value="simple">
+                            <label for="color-simple">Simple Map</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color-style" id="color-judete" value="judete">
+                            <label for="color-judete">Counties</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color-style" id="color-buffer" value="buffer">
+                            <label for="color-buffer">Buffers</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color-style" id="color-style1" value="style1">
+                            <label for="color-style1">Map Style 1</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color-style" id="color-style2" value="style2">
+                            <label for="color-style2">Map Style 2</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color-style" id="color-style3" value="style3">
+                            <label for="color-style3">Map Style 3</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color-style" id="color-style4" value="style4">
+                            <label for="color-style4">Map Style 4</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-pannel side-pannel--right editor">
+                    <div class="control control-group">
+                        <a id="play-fonts" class="play-icon" href="#" title="Play"></a>
+                        <a id="pause-fonts" class="pause-icon hide" href="#" title="Pause"></a>
+                    </div>
+                    <div class="control control-group checkboxes">
+                        <div>
+                            <input type="checkbox" name="toggle-map" id="toggle-map">
+                            <label for="toggle-map">Map</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="toggle-pack" id="toggle-pack">
+                            <label for="toggle-pack">Pack</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="toggle-pack-background" id="toggle-pack-background">
+                            <label for="toggle-pack-background">Pack Back</label>
+                        </div>
+                    </div>
+                    <div class="control control-group slider editor">
+                        Stroke <span id="stroke-value">0.5</span>px
+                        <input class="slider__range" type="range" min="0" max="2.5" id="stroke" step="0.5" value=0.5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+mixin articleBody(article= {})
+  .single
+    //- h2.title.title--single
+    //-   a(href=`/articles/${article.name}`) #{article.title}
+    .single__hero
+      img.single__image(src=`../../img/${article.photo || 'article.png'}`)
+
+  .single__details.inner
+    p !{article.text}
+
+    if article.tags
+      ul.tags
+        each tag in article.tags
+          li.tag
+            a.tag__link(href=`/tags/${tag}`)
+              span.tag__text ##{tag}
+

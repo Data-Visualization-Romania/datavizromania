@@ -1,0 +1,11 @@
+.show {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+#navbar-collapse {
+  display: none;
+  @media all and (min-width: 850px) {
+    display: block;
+  }
+}

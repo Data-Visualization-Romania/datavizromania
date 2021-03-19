@@ -1,0 +1,14 @@
+mixin articleCard(article= {})
+  .article
+    //- h3.title.title--article
+    //-   a(href=`/${article.slug}/index.html`) #{article.title}
+    .article__hero
+      .article__actions
+          
+      a(href=`/${article.slug}/index.html`)
+      a(href=`/${article.slug}/`)
+        img(src=`./img/${article.photo || 'article.png'}`)
+    .article__details
+      if (article.text)
+        p !{article.text.split(' ').slice(0, 50).join(' ')} 
+          a(href=`/${article.slug}/`) #{"[...]"}

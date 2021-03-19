@@ -1,0 +1,7 @@
+extends ../views/layout
+
+include mixins/_articleBody
+
+block content
+
+  +articleBody(globals.articles["slack"])

@@ -1,0 +1,15 @@
+extends layout
+
+include mixins/_articleCard
+
+block content
+  .inner
+    //- h1= globals.title
+
+    //- .items
+      //- each menu_item in globals.nestedArticles
+      //-   //- h2= menu_item.key
+      //-   .articles(id= `#${menu_item.key.toLowerCase()}`)
+    .articles
+      each item in globals.articles
+        +articleCard(item)
