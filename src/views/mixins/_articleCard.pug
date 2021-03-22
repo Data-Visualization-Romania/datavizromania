@@ -10,10 +10,12 @@ mixin articleCard(article= {})
         a(href=`/${article.slug}/`)
           img(src=`./img/${article.photo || 'article.png'}`)
       else
-        a(href="#")
+        a(href="/")
           img(src=`./img/${article.photo || 'article.png'}`)
     .article__details
       if (article.text)
         p !{article.text.split(' ').slice(0, 60).join(' ')}
-          a(href="#") #{"[...]"}
-          //- a(href=`/${article.slug}/`) #{"[...]"}
+          if (article.slug === "playground/logo")
+            a(href=`/${article.slug}/`) #{"[...]"}
+          else
+            a(href="/") #{"[...]"}
