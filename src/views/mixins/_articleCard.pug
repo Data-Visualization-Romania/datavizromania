@@ -5,11 +5,15 @@ mixin articleCard(article= {})
     .article__hero
       .article__actions
           
-      a(href=`/${article.slug}/index.html`)
-      a(href=`/${article.slug}/`)
-        img(src=`./img/${article.photo || 'article.png'}`)
+      //- a(href=`/${article.slug}/index.html`)
+      if (article.slug === "playground/logo")
+        a(href=`/${article.slug}/`)
+          img(src=`./img/${article.photo || 'article.png'}`)
+      else
+        a(href="#")
+          img(src=`./img/${article.photo || 'article.png'}`)
     .article__details
       if (article.text)
-        p !{article.text.split(' ').slice(0, 100).join(' ')}
+        p !{article.text.split(' ').slice(0, 60).join(' ')}
           a(href="#") #{"[...]"}
           //- a(href=`/${article.slug}/`) #{"[...]"}

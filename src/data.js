@@ -103,7 +103,7 @@ exports.data = {
       name: "art_1",
       menu_item: "noutati",
       title: "Primul pas",
-      slug: "", // slug: articles/despre
+      slug: "noutati/despre",
       type: "child",
       icon: "despre.png",
       description: "Despre",
@@ -122,7 +122,7 @@ exports.data = {
       name: "art_2",
       menu_item: "inspiratie",
       title: "De ce am lansat Dataviz România",
-      slug: "", // slug: inspiratie/sxywu_flowers
+      slug: "inspiratie/sxywu_flowers",
       type: "child",
       icon: "sxywu_flowers.png",
       description: "De ce am lansat Dataviz România",
@@ -142,7 +142,7 @@ exports.data = {
       name: "art_3",
       menu_item: "invatare",
       title: "#30DayChartChallenge",
-      slug: "", // slug: invatare/chart_chall
+      slug: "invatare/chart_chall",
       type: "child",
       icon: "chart_chall.jpeg",
       description: "#30DayChartChallenge",
@@ -165,7 +165,7 @@ exports.data = {
       name: "art_4",
       menu_item: "diverse",
       title: "De ce folosesc Dataviz",
-      slug: "", // slug: diverse/dataviz
+      slug: "diverse/dataviz",
       type: "child",
       icon: "dece.jpeg",
       description: "De ce folosesc Dataviz",
@@ -180,7 +180,7 @@ exports.data = {
       name: "art_5",
       menu_item: "noutati",
       title: "Nou grup temporar pe Slack",
-      slug: "", // slug: noutati/slack
+      slug: "noutati/slack",
       type: "child",
       icon: "slack.png",
       description: "Nou grup temporar pe Slack",
@@ -194,7 +194,7 @@ exports.data = {
       name: "art_6",
       menu_item: "evenimente",
       title: "EUOpenDataDays",
-      slug: "", // slug: evenimente/eu-open-data-days
+      slug: "evenimente/eu-open-data-days",
       type: "child",
       icon: "eu_publications.jpeg",
       description: "EUOpenDataDays",
@@ -209,7 +209,7 @@ exports.data = {
       name: "art_7",
       menu_item: "principii",
       title: "Definiția vizualizării de date",
-      slug: "", // slug: principii/definitie-vizualizarea
+      slug: "principii/definitie-vizualizarea",
       type: "child",
       icon: "def_vizualizarea.jpeg",
       description: "Definiția vizualizării de date",
@@ -223,7 +223,7 @@ exports.data = {
       name: "art_8",
       menu_item: "diverse",
       title: "Generare Lenny Face",
-      slug: "", // slug: diverse/lenny-face
+      slug: "diverse/lenny-face",
       type: "child",
       icon: "lenny_face.jpeg",
       description: "Generare Lenny Face",
@@ -236,7 +236,7 @@ exports.data = {
       name: "art_9",
       menu_item: "inspiratie",
       title: "Harta Top femei fondatoare",
-      slug: "", // slug: inspiratie/harta_top_femei
+      slug: "inspiratie/harta_top_femei",
       type: "child",
       icon: "harta_top_femei.png",
       description: "Harta Top femei fondatoare",
@@ -251,7 +251,7 @@ exports.data = {
       name: "art_10",
       menu_item: "inspiratie",
       title: "Drumurile Imperiului Roman",
-      slug: "", // slug: inspiratie/drumurile_imperiului
+      slug: "inspiratie/drumurile_imperiului",
       type: "child",
       icon: "drumurile_imperiului.png",
       description: "Drumurile Imperiului Roman",
@@ -265,7 +265,7 @@ exports.data = {
       name: "art_11",
       menu_item: "inspiratie",
       title: "Get it Right in Black & White",
-      slug: "", // slug: inspiratie/get_it_right
+      slug: "inspiratie/get_it_right",
       type: "child",
       icon: "get_it_right.png",
       description: "Get it Right in Black & White",
