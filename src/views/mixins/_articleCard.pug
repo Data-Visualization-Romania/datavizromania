@@ -10,5 +10,6 @@ mixin articleCard(article= {})
         img(src=`./img/${article.photo || 'article.png'}`)
     .article__details
       if (article.text)
-        p !{article.text.split(' ').slice(0, 50).join(' ')} 
-          a(href=`/${article.slug}/`) #{"[...]"}
+        p !{article.text.split(' ').slice(0, 100).join(' ')}
+          a(href="#") #{"[...]"}
+          //- a(href=`/${article.slug}/`) #{"[...]"}

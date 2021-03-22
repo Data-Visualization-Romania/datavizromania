@@ -290,5 +290,35 @@ exports.data = {
       photo: "logo.png",
       timestamp: 12,
     },
+    {
+      name: "art_13",
+      menu_item: "evenimente",
+      title: "Logo Playground",
+      slug: "evenimente/outlier2021",
+      type: "child",
+      icon: "outlier2021.jpeg",
+      description: "Outlier 2021",
+      text: `Înregistrările de la Outlier 2021, prima mare conferință organizată de Data Visualization Society în februarie, pot fi accesate gratuit pe YouTube 🎉
+      Playlist: <a href="https://www.youtube.com/playlist?list=PLAm5TIX-yz7IkKOUcStM_vl8AD0S9v0co">https://youtube.com/playlist...</a>
+      Twitter: <a href="https://twitter.com/OutlierConf/status/1372962446823075851?s=19">https://twitter.com/Outlier.../status/1372962446823075851...</a>
+      Detalii DVS: <a href="https://www.datavisualizationsociety.com/">https://www.datavisualizationsociety.com/</a> `,
+      photo: "outlier2021.jpeg",
+      timestamp: 13,
+    },
+    {
+      name: "art_14",
+      menu_item: "evenimente",
+      title: "Primul commit PROJ",
+      slug: "evenimente/proj_18martie",
+      type: "child",
+      icon: "proj_18martie.jpeg",
+      description: "Primul commit PROJ",
+      text: `❗Pe 18 martie 1999 𝐏𝐑𝐎𝐉 ne era pus la dispoziție prin primul commit disponibil pe GitHub, chiar dacă proiectul datează din anii 70/80. ✨🌐✨
+      Să știm cui trebuie să mulțumim pentru proiecțiile din hărțile digitale. 🙂
+      <a href="https://github.com/OSGeo/PROJ/commit/565a4bd035b9d4a83955808efef20f1d8dfa24cf">https://github.com/.../565a4bd035b9d4a83955808efef20f1d8d...</a>
+      <a href="https://twitter.com/mapserving/status/1373359578117779456?s=19">https://twitter.com/mapserving/status/1373359578117779456...</a>`,
+      photo: "proj_18martie.jpeg",
+      timestamp: 14,
+    },
   ],
 };

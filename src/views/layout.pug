@@ -33,7 +33,7 @@ html
         header.top
           nav.nav
             .nav__section.nav__section--logo
-              a.nav__link.nav__link--logo(href="/")
+              a.nav__link.nav__link--logo(href="#")
                 != globals.icon('logo_old2')
             div(id="navbar-collapse")
               .nav__section.nav__section--menu
@@ -42,10 +42,10 @@ html
                     a.nav__link(href=item.slug, class=(''))
                       != globals.icon(item.icon)
                       span #{item.title}
-                li.nav__item: a.nav__link(href="/", class=('')) 
-                  != globals.icon('cauta') 
+                li.nav__item: a.nav__link(href="#", class=(''))
+                  != globals.icon('cauta')
                   span Căutare
-                li.nav__item: a.nav__link(href="/") Log In
+                li.nav__item: a.nav__link(href="#") Log In
             .nav__section.nav__section--collapse
               li.nav__item
                 a.nav__link.nav__link--toggler(id="navbar-toggler" href="javascript:void(0);")
@@ -97,7 +97,7 @@ html
                 i.fa.fa-at
                 //- span Mail
           li.nav__item.nav__item--copyright
-            a.nav__link(href="/", class=(''))
+            a.nav__link(href="#", class=(''))
               span Copyright &copy;#{new Date().getFullYear()} Dataviz România
   
     link(href= "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", rel='stylesheet')
