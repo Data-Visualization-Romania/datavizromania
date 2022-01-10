@@ -4,3 +4,11 @@
 *.png binary
 *.jpg binary
 *.ttf binary
+
+*.ico binary
+*.TTF binary
+
+*.gif binary
+*.mp4 binary
+*.mkv binary
+*.pgw binary
