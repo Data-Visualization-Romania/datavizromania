@@ -128,16 +128,16 @@ p {
 
   box-shadow: inset 10px 10px 100px #000;
   overflow: auto;
-}
 
-.centered {
-  margin-left: auto;
-  margin-right: auto;
+  .centered {
+    margin-left: auto;
+    margin-right: auto;
 
-  /* Large devices (large desktops, 1200px and up) */
-  @media (min-width: 940px) {
-    max-width: 1100px;
-    float: none;
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 940px) {
+      max-width: 1100px;
+      float: none;
+    }
   }
 }
 
